@@ -7,6 +7,28 @@
     <groupId>com.agh</groupId>
     <artifactId>CRUD2</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <jetty.version>7.1.6.v20100715</jetty.version>
+    </properties>
 
+    <repositories>
+        <repository>
+            <id>repo2_maven_org</id>
+            <url>http://repo2.maven.org/maven2</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+    </dependencies>
 </project>
